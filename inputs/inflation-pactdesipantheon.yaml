@@ -1,6 +1,6 @@
 theory: !defaults [../theories/cpl]
 likelihood: !defaults [../likelihoods/p_act, ../likelihoods/sroll2, ../likelihoods/lensing, ../likelihoods/desi, ../likelihoods/pantheon]
-params: !defaults [../parameters/inflation]
+params: !defaults [../parameters/base, ../parameters/inflation, ../parameters/fix-nu]
 
 prior:
   cal_dip_prior: 'lambda A_act: stats.norm.logpdf(A_act, loc = 1.0, scale = 0.003)'

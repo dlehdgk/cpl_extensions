@@ -11,7 +11,6 @@ camb:
     lSampleBoost: 1
     lAccuracyBoost: 1.2
     num_massive_neutrinos: 1
-    nnu: 3.044
     min_l_logl_sampling: 6000
     DoLateRadTruncation: false
     halofit_version: mead2016
