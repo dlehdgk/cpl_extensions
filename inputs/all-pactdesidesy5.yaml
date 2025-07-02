@@ -1,0 +1,14 @@
+theory: !defaults [../theories/nu]
+likelihood: !defaults [../likelihoods/p_act, ../likelihoods/sroll2, ../likelihoods/lensing, ../likelihoods/desi, ../likelihoods/desy5]
+params: !defaults [../parameters/base, ../parameters/nu, ../parameters/curvature, ../parameters/inflation]
+
+sampler:
+  mcmc:
+    drag: true
+    oversample_power: 0.4
+    proposal_scale: 1.9
+    covmat: auto
+    Rminus1_stop: 0.01
+    Rminus1_cl_stop: 0.2
+resume: true
+output: ../chains/all-pactdesidesy5

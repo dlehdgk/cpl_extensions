@@ -17,4 +17,5 @@ source /users/smp24dhl/cosmo/code/planck/clik/bin/clik_profile.sh
 
 export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
 
-srun --export=ALL cobaya-run ../inputs/nu-planckdesidesy5.yaml
+chain_name="nu-planckdesidesy5"
+srun --export=ALL cobaya-run ../inputs/${chain_name}.yaml
