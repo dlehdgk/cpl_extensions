@@ -1,6 +1,6 @@
-theory: !defaults [../theories/nu]
-likelihood: !defaults [../likelihoods/planck, ../likelihoods/sroll2, ../likelihoods/lensing, ../likelihoods/desi, ../likelihoods/desy5]
-params: !defaults [../parameters/base, ../parameters/nu, ../parameters/curvature, ../parameters/inflation]
+theory: !defaults [../theories/cpl]
+likelihood: !defaults [../likelihoods/planck, ../likelihoods/bk18, ../likelihoods/sroll2, ../likelihoods/lensing, ../likelihoods/desi, ../likelihoods/desy5]
+params: !defaults [../parameters/base, ../parameters/nu, ../parameters/curvature, ../parameters/inflation-alpha]
 
 sampler:
   mcmc:
@@ -10,5 +10,4 @@ sampler:
     covmat: auto
     Rminus1_stop: 0.01
     Rminus1_cl_stop: 0.2
-resume: true
-output: ../chains/all-planckdesipantheon
+output: ../chains/all-infalpha-planckdesipantheon

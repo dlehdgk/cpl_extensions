@@ -37,6 +37,5 @@ sampler:
     covmat: auto
     Rminus1_stop: 0.01
     Rminus1_cl_stop: 0.2
-resume: true
 output: ../chains/<run_name>
 ```

@@ -75,7 +75,7 @@ w:
     loc: -0.99
     scale: 0.02
   proposal: 0.02
-  latex: w_{0,\mathrm{DE}}
+  latex: w_0
 wa:
   prior:
     min: -3
@@ -85,7 +85,7 @@ wa:
     loc: 0.0
     scale: 0.05
   proposal: 0.05
-  latex: w_{a,\mathrm{DE}}
+  latex: w_a
 YHe:
   latex: Y_\mathrm{P}
 Y_p:
@@ -93,20 +93,6 @@ Y_p:
 DHBBN:
   derived: 'lambda DH: 10**5*DH'
   latex: 10^5 \mathrm{D}/\mathrm{H}
-zrei:
-  latex: z_\mathrm{re}
-sigma8:
-  latex: \sigma_8
-S8:
-  derived: 'lambda sigma8, omegam: sigma8*(omegam/0.3)**0.5'
-A:
-  derived: 'lambda As: 1e9*As'
-  latex: 10^9 A_\mathrm{s}
-clamp:
-  derived: 'lambda As, tau: 1e9*As*np.exp(-2*tau)'
-  latex: 10^9 A_\mathrm{s} e^{-2\tau}
-age:
-  latex: '{\rm{Age}}/\mathrm{Gyr}'
 tau:
   prior:
     min: 0.01
@@ -117,4 +103,18 @@ tau:
     scale: 0.0006
   proposal: 0.003
   latex: \tau_\mathrm{reio}
-
+zrei:
+  latex: z_\mathrm{re}
+sigma8:
+  latex: \sigma_8
+S8:
+  derived: 'lambda sigma8, omegam: sigma8*(omegam/0.3)**0.5'
+  latex: S_8
+A:
+  derived: 'lambda As: 1e9*As'
+  latex: 10^9 A_\mathrm{s}
+clamp:
+  derived: 'lambda As, tau: 1e9*As*np.exp(-2*tau)'
+  latex: 10^9 A_\mathrm{s} e^{-2\tau}
+age:
+  latex: '{\rm{Age}}/\mathrm{Gyr}'

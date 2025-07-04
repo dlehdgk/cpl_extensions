@@ -1,5 +1,5 @@
 theory: !defaults [../theories/cpl]
-likelihood: !defaults [../likelihoods/planck, ../likelihoods/sroll2, ../likelihoods/lensing, ../likelihoods/desi, ../likelihoods/desy5]
+likelihood: !defaults [../likelihoods/planck, ../likelihoods/bk18, ../likelihoods/sroll2, ../likelihoods/lensing, ../likelihoods/desi, ../likelihoods/desy5]
 params: !defaults [../parameters/base, ../parameters/curvature, ../parameters/fix-nu]
 
 sampler:
@@ -10,5 +10,4 @@ sampler:
     covmat: auto
     Rminus1_stop: 0.01
     Rminus1_cl_stop: 0.2
-resume: true
 output: ../chains/curvature-planckdesidesy5

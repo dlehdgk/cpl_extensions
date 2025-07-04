@@ -10,7 +10,8 @@ camb:
     AccuracyBoost: 1
     lSampleBoost: 1
     lAccuracyBoost: 1.2
-    num_massive_neutrinos: 1
+    num_massive_neutrinos: 3
+    neutrino_hierarchy: degenerate
     min_l_logl_sampling: 6000
     DoLateRadTruncation: false
     halofit_version: mead2016

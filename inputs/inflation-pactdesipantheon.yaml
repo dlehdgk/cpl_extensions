@@ -1,6 +1,6 @@
 theory: !defaults [../theories/cpl]
-likelihood: !defaults [../likelihoods/p_act, ../likelihoods/sroll2, ../likelihoods/lensing, ../likelihoods/desi, ../likelihoods/pantheon]
-params: !defaults [../parameters/base, ../parameters/inflation, ../parameters/fix-nu]
+likelihood: !defaults [../likelihoods/p_act, ../likelihoods/bk18, ../likelihoods/sroll2, ../likelihoods/lensing, ../likelihoods/desi, ../likelihoods/pantheon]
+params: !defaults [../parameters/base, ../parameters/inflation-alpha, ../parameters/fix-nu]
 
 prior:
   cal_dip_prior: 'lambda A_act: stats.norm.logpdf(A_act, loc = 1.0, scale = 0.003)'
@@ -13,5 +13,4 @@ sampler:
     covmat: auto
     Rminus1_stop: 0.01
     Rminus1_cl_stop: 0.2
-resume: true
-output: ../chains/inflation-pactdesipantheon
+output: ../chains/infalpha-pactdesipantheon
