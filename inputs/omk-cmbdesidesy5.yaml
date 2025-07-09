@@ -1,0 +1,14 @@
+theory: !defaults [../theories/cpl]
+likelihood: !defaults [../likelihoods/p_act, ../likelihoods/bk18, ../likelihoods/sroll2, ../likelihoods/spt3gd1mf, ../likelihoods/lensing, ../likelihoods/desi, ../likelihoods/desy5]
+params: !defaults [../parameters/spt-mf, ../parameters/base, ../parameters/curvature, ../parameters/fix-nu]
+prior: !defaults [../likelihoods/pri_act, ../likelihoods/pri_spt3gd1mf]
+
+sampler:
+  mcmc:
+    drag: true
+    oversample_power: 0.4
+    proposal_scale: 1.9
+    covmat: auto
+    Rminus1_stop: 0.01
+    Rminus1_cl_stop: 0.2
+output: ../chains/omk-cmbdesidesy5

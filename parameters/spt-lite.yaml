@@ -1,0 +1,12 @@
+Tcal:
+  latex: T_{\rm cal}
+  prior:
+    max: 1.2
+    min: 0.8
+  ref: 1.0
+Ecal:
+  latex: E_{\rm cal}
+  prior:
+    max: 1.2
+    min: 0.8
+  ref: 1.0
